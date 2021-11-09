@@ -58,6 +58,27 @@ public class User {
     public void setPassword(String pass){
         this.password = pass;
     }
+    
+    public void addtofile() {
+    	String fileName = "out.txt";
+    	
+    	try {
+    	FileWriter fw = new FileWriter(fileName);
+    	BufferedWriter bw = new BufferedWriter(fw);
+    	PrintWriter out = new PrintWriter(bw);
+    	out.println(firstName);
+    	out.println(lastName);
+    	out.println(dob);
+    	out.println(password);
+    	out.println(id);
+    	out.close();
+    	}
+    	catch(IOException e) {
+    		System.err.println(e);
+    	}
+    	
+    	
+    }
 
 
 
