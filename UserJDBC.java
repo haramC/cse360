@@ -10,7 +10,7 @@ public class UserJDBC {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc-user","root","7942zxcasD");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc-user","root","*********");
             Statement statement = connection.createStatement();
 
             ResultSet resultSet = statement.executeQuery("select * from user");
